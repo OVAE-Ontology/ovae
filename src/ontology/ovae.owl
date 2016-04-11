@@ -28,13 +28,14 @@
      xmlns:external_byhand="&obo;vo/external/external_byhand.owl#"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;ovae.owl">
-        <dc:date xml:lang="en">10-05-2015</dc:date>
+        <dc:date xml:lang="en">04-11-2016</dc:date>
         <dc:subject xml:lang="en">A biomedical ontology in the area of vaccine adverse events.</dc:subject>
         <dc:creator xml:lang="en">Erica Marcos</dc:creator>
+        <dc:creator xml:lang="en">Jiangan Xie</dc:creator>
         <dc:description xml:lang="en">OVAE is a biomedical ontology in the area of vaccine adverse events. OVAE is an extension of the community-based Ontology of Adverse Events (OAE). </dc:description>
         <dc:title xml:lang="en">OVAE: Ontology of Vaccine Adverse Events</dc:title>
         <dc:format xml:lang="en">OWL-DL</dc:format>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.32</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.33</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <owl:imports rdf:resource="&obo;ovae/OAE_import.owl"/>
         <owl:imports rdf:resource="&obo;ovae/VO_import.owl"/>
@@ -1813,6 +1814,60 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>Yongqun He, Erica Marcos</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OVAE_0000062 -->
+
+    <owl:Class rdf:about="&obo;OVAE_0000062">
+        <rdfs:label xml:lang="en">Flublok-associated muscle pain AE</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OAE_0000383"/>
+        <rdfs:subClassOf rdf:resource="&obo;OVAE_0000009"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OVAE_0000058"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;VO_0000545"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;OVAE_0000057"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="&xsd;decimal"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minInclusive rdf:datatype="&xsd;decimal">0.11</xsd:minInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;OVAE_0000059"/>
+                                <owl:someValuesFrom>
+                                    <rdfs:Datatype>
+                                        <owl:onDatatype rdf:resource="&xsd;integer"/>
+                                        <owl:withRestrictions rdf:parseType="Collection">
+                                            <rdf:Description>
+                                                <xsd:minInclusive rdf:datatype="&xsd;integer">50</xsd:minInclusive>
+                                            </rdf:Description>
+                                            <rdf:Description>
+                                                <xsd:maxInclusive rdf:datatype="&xsd;integer">64</xsd:maxInclusive>
+                                            </rdf:Description>
+                                        </owl:withRestrictions>
+                                    </rdfs:Datatype>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>A Flublok vaccine adverse event that is associated with an administration of Flublok and displays a muscle pain AE</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://www.fda.gov/downloads/BiologicsBloodVaccines/Vaccines/ApprovedProducts/UCM336020.pdf</obo:IAO_0000119>
+        <obo:IAO_0000117>Yongqun He, Jiangan Xie</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -3659,10 +3714,10 @@
                                         <owl:onDatatype rdf:resource="&xsd;integer"/>
                                         <owl:withRestrictions rdf:parseType="Collection">
                                             <rdf:Description>
-                                                <xsd:maxInclusive rdf:datatype="&xsd;integer">7</xsd:maxInclusive>
+                                                <xsd:minInclusive rdf:datatype="&xsd;integer">6</xsd:minInclusive>
                                             </rdf:Description>
                                             <rdf:Description>
-                                                <xsd:minInclusive rdf:datatype="&xsd;integer">6</xsd:minInclusive>
+                                                <xsd:maxInclusive rdf:datatype="&xsd;integer">7</xsd:maxInclusive>
                                             </rdf:Description>
                                         </owl:withRestrictions>
                                     </rdfs:Datatype>
@@ -3704,10 +3759,10 @@
                                         <owl:onDatatype rdf:resource="&xsd;integer"/>
                                         <owl:withRestrictions rdf:parseType="Collection">
                                             <rdf:Description>
-                                                <xsd:maxInclusive rdf:datatype="&xsd;integer">7</xsd:maxInclusive>
+                                                <xsd:minInclusive rdf:datatype="&xsd;integer">6</xsd:minInclusive>
                                             </rdf:Description>
                                             <rdf:Description>
-                                                <xsd:minInclusive rdf:datatype="&xsd;integer">6</xsd:minInclusive>
+                                                <xsd:maxInclusive rdf:datatype="&xsd;integer">7</xsd:maxInclusive>
                                             </rdf:Description>
                                         </owl:withRestrictions>
                                     </rdfs:Datatype>
@@ -3938,10 +3993,10 @@
                                                         <owl:onDatatype rdf:resource="&xsd;integer"/>
                                                         <owl:withRestrictions rdf:parseType="Collection">
                                                             <rdf:Description>
-                                                                <xsd:maxInclusive rdf:datatype="&xsd;integer">7</xsd:maxInclusive>
+                                                                <xsd:minInclusive rdf:datatype="&xsd;integer">6</xsd:minInclusive>
                                                             </rdf:Description>
                                                             <rdf:Description>
-                                                                <xsd:minInclusive rdf:datatype="&xsd;integer">6</xsd:minInclusive>
+                                                                <xsd:maxInclusive rdf:datatype="&xsd;integer">7</xsd:maxInclusive>
                                                             </rdf:Description>
                                                         </owl:withRestrictions>
                                                     </rdfs:Datatype>
@@ -4012,10 +4067,10 @@
                                                         <owl:onDatatype rdf:resource="&xsd;integer"/>
                                                         <owl:withRestrictions rdf:parseType="Collection">
                                                             <rdf:Description>
-                                                                <xsd:maxInclusive rdf:datatype="&xsd;integer">7</xsd:maxInclusive>
+                                                                <xsd:minInclusive rdf:datatype="&xsd;integer">6</xsd:minInclusive>
                                                             </rdf:Description>
                                                             <rdf:Description>
-                                                                <xsd:minInclusive rdf:datatype="&xsd;integer">6</xsd:minInclusive>
+                                                                <xsd:maxInclusive rdf:datatype="&xsd;integer">7</xsd:maxInclusive>
                                                             </rdf:Description>
                                                         </owl:withRestrictions>
                                                     </rdfs:Datatype>
@@ -4086,10 +4141,10 @@
                                                         <owl:onDatatype rdf:resource="&xsd;integer"/>
                                                         <owl:withRestrictions rdf:parseType="Collection">
                                                             <rdf:Description>
-                                                                <xsd:maxInclusive rdf:datatype="&xsd;integer">7</xsd:maxInclusive>
+                                                                <xsd:minInclusive rdf:datatype="&xsd;integer">6</xsd:minInclusive>
                                                             </rdf:Description>
                                                             <rdf:Description>
-                                                                <xsd:minInclusive rdf:datatype="&xsd;integer">6</xsd:minInclusive>
+                                                                <xsd:maxInclusive rdf:datatype="&xsd;integer">7</xsd:maxInclusive>
                                                             </rdf:Description>
                                                         </owl:withRestrictions>
                                                     </rdfs:Datatype>
@@ -4128,35 +4183,106 @@
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="&obo;VO_0000545"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;OVAE_0000057"/>
-                                <owl:someValuesFrom>
-                                    <rdfs:Datatype>
-                                        <owl:onDatatype rdf:resource="&xsd;decimal"/>
-                                        <owl:withRestrictions rdf:parseType="Collection">
-                                            <rdf:Description>
-                                                <xsd:minInclusive rdf:datatype="&xsd;decimal">0.37</xsd:minInclusive>
-                                            </rdf:Description>
-                                        </owl:withRestrictions>
-                                    </rdfs:Datatype>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;OVAE_0000059"/>
-                                <owl:someValuesFrom>
-                                    <rdfs:Datatype>
-                                        <owl:onDatatype rdf:resource="&xsd;integer"/>
-                                        <owl:withRestrictions rdf:parseType="Collection">
-                                            <rdf:Description>
-                                                <xsd:maxInclusive rdf:datatype="&xsd;integer">49</xsd:maxInclusive>
-                                            </rdf:Description>
-                                            <rdf:Description>
-                                                <xsd:minInclusive rdf:datatype="&xsd;integer">8</xsd:minInclusive>
-                                            </rdf:Description>
-                                        </owl:withRestrictions>
-                                    </rdfs:Datatype>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;OVAE_0000057"/>
+                                                <owl:someValuesFrom>
+                                                    <rdfs:Datatype>
+                                                        <owl:onDatatype rdf:resource="&xsd;decimal"/>
+                                                        <owl:withRestrictions rdf:parseType="Collection">
+                                                            <rdf:Description>
+                                                                <xsd:minInclusive rdf:datatype="&xsd;decimal">0.19</xsd:minInclusive>
+                                                            </rdf:Description>
+                                                        </owl:withRestrictions>
+                                                    </rdfs:Datatype>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;OVAE_0000059"/>
+                                                <owl:someValuesFrom>
+                                                    <rdfs:Datatype>
+                                                        <owl:onDatatype rdf:resource="&xsd;integer"/>
+                                                        <owl:withRestrictions rdf:parseType="Collection">
+                                                            <rdf:Description>
+                                                                <xsd:minInclusive rdf:datatype="&xsd;integer">65</xsd:minInclusive>
+                                                            </rdf:Description>
+                                                        </owl:withRestrictions>
+                                                    </rdfs:Datatype>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;OVAE_0000057"/>
+                                                <owl:someValuesFrom>
+                                                    <rdfs:Datatype>
+                                                        <owl:onDatatype rdf:resource="&xsd;decimal"/>
+                                                        <owl:withRestrictions rdf:parseType="Collection">
+                                                            <rdf:Description>
+                                                                <xsd:minInclusive rdf:datatype="&xsd;decimal">0.32</xsd:minInclusive>
+                                                            </rdf:Description>
+                                                        </owl:withRestrictions>
+                                                    </rdfs:Datatype>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;OVAE_0000059"/>
+                                                <owl:someValuesFrom>
+                                                    <rdfs:Datatype>
+                                                        <owl:onDatatype rdf:resource="&xsd;integer"/>
+                                                        <owl:withRestrictions rdf:parseType="Collection">
+                                                            <rdf:Description>
+                                                                <xsd:minInclusive rdf:datatype="&xsd;integer">50</xsd:minInclusive>
+                                                            </rdf:Description>
+                                                            <rdf:Description>
+                                                                <xsd:maxInclusive rdf:datatype="&xsd;integer">64</xsd:maxInclusive>
+                                                            </rdf:Description>
+                                                        </owl:withRestrictions>
+                                                    </rdfs:Datatype>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;OVAE_0000057"/>
+                                                <owl:someValuesFrom>
+                                                    <rdfs:Datatype>
+                                                        <owl:onDatatype rdf:resource="&xsd;decimal"/>
+                                                        <owl:withRestrictions rdf:parseType="Collection">
+                                                            <rdf:Description>
+                                                                <xsd:minInclusive rdf:datatype="&xsd;decimal">0.37</xsd:minInclusive>
+                                                            </rdf:Description>
+                                                        </owl:withRestrictions>
+                                                    </rdfs:Datatype>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;OVAE_0000059"/>
+                                                <owl:someValuesFrom>
+                                                    <rdfs:Datatype>
+                                                        <owl:onDatatype rdf:resource="&xsd;integer"/>
+                                                        <owl:withRestrictions rdf:parseType="Collection">
+                                                            <rdf:Description>
+                                                                <xsd:maxInclusive rdf:datatype="&xsd;integer">49</xsd:maxInclusive>
+                                                            </rdf:Description>
+                                                            <rdf:Description>
+                                                                <xsd:minInclusive rdf:datatype="&xsd;integer">18</xsd:minInclusive>
+                                                            </rdf:Description>
+                                                        </owl:withRestrictions>
+                                                    </rdfs:Datatype>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:unionOf>
+                            </owl:Class>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
@@ -4182,43 +4308,114 @@
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="&obo;VO_0000545"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;OVAE_0000057"/>
-                                <owl:someValuesFrom>
-                                    <rdfs:Datatype>
-                                        <owl:onDatatype rdf:resource="&xsd;decimal"/>
-                                        <owl:withRestrictions rdf:parseType="Collection">
-                                            <rdf:Description>
-                                                <xsd:minInclusive rdf:datatype="&xsd;decimal">0.15</xsd:minInclusive>
-                                            </rdf:Description>
-                                        </owl:withRestrictions>
-                                    </rdfs:Datatype>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;OVAE_0000059"/>
-                                <owl:someValuesFrom>
-                                    <rdfs:Datatype>
-                                        <owl:onDatatype rdf:resource="&xsd;integer"/>
-                                        <owl:withRestrictions rdf:parseType="Collection">
-                                            <rdf:Description>
-                                                <xsd:maxInclusive rdf:datatype="&xsd;integer">49</xsd:maxInclusive>
-                                            </rdf:Description>
-                                            <rdf:Description>
-                                                <xsd:minInclusive rdf:datatype="&xsd;integer">8</xsd:minInclusive>
-                                            </rdf:Description>
-                                        </owl:withRestrictions>
-                                    </rdfs:Datatype>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;OVAE_0000057"/>
+                                                <owl:someValuesFrom>
+                                                    <rdfs:Datatype>
+                                                        <owl:onDatatype rdf:resource="&xsd;decimal"/>
+                                                        <owl:withRestrictions rdf:parseType="Collection">
+                                                            <rdf:Description>
+                                                                <xsd:minInclusive rdf:datatype="&xsd;decimal">0.10</xsd:minInclusive>
+                                                            </rdf:Description>
+                                                        </owl:withRestrictions>
+                                                    </rdfs:Datatype>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;OVAE_0000059"/>
+                                                <owl:someValuesFrom>
+                                                    <rdfs:Datatype>
+                                                        <owl:onDatatype rdf:resource="&xsd;integer"/>
+                                                        <owl:withRestrictions rdf:parseType="Collection">
+                                                            <rdf:Description>
+                                                                <xsd:minInclusive rdf:datatype="&xsd;integer">65</xsd:minInclusive>
+                                                            </rdf:Description>
+                                                        </owl:withRestrictions>
+                                                    </rdfs:Datatype>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;OVAE_0000057"/>
+                                                <owl:someValuesFrom>
+                                                    <rdfs:Datatype>
+                                                        <owl:onDatatype rdf:resource="&xsd;decimal"/>
+                                                        <owl:withRestrictions rdf:parseType="Collection">
+                                                            <rdf:Description>
+                                                                <xsd:minInclusive rdf:datatype="&xsd;decimal">0.15</xsd:minInclusive>
+                                                            </rdf:Description>
+                                                        </owl:withRestrictions>
+                                                    </rdfs:Datatype>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;OVAE_0000059"/>
+                                                <owl:someValuesFrom>
+                                                    <rdfs:Datatype>
+                                                        <owl:onDatatype rdf:resource="&xsd;integer"/>
+                                                        <owl:withRestrictions rdf:parseType="Collection">
+                                                            <rdf:Description>
+                                                                <xsd:maxInclusive rdf:datatype="&xsd;integer">49</xsd:maxInclusive>
+                                                            </rdf:Description>
+                                                            <rdf:Description>
+                                                                <xsd:minInclusive rdf:datatype="&xsd;integer">18</xsd:minInclusive>
+                                                            </rdf:Description>
+                                                        </owl:withRestrictions>
+                                                    </rdfs:Datatype>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;OVAE_0000057"/>
+                                                <owl:someValuesFrom>
+                                                    <rdfs:Datatype>
+                                                        <owl:onDatatype rdf:resource="&xsd;decimal"/>
+                                                        <owl:withRestrictions rdf:parseType="Collection">
+                                                            <rdf:Description>
+                                                                <xsd:minInclusive rdf:datatype="&xsd;decimal">0.15</xsd:minInclusive>
+                                                            </rdf:Description>
+                                                        </owl:withRestrictions>
+                                                    </rdfs:Datatype>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;OVAE_0000059"/>
+                                                <owl:someValuesFrom>
+                                                    <rdfs:Datatype>
+                                                        <owl:onDatatype rdf:resource="&xsd;integer"/>
+                                                        <owl:withRestrictions rdf:parseType="Collection">
+                                                            <rdf:Description>
+                                                                <xsd:minInclusive rdf:datatype="&xsd;integer">50</xsd:minInclusive>
+                                                            </rdf:Description>
+                                                            <rdf:Description>
+                                                                <xsd:maxInclusive rdf:datatype="&xsd;integer">64</xsd:maxInclusive>
+                                                            </rdf:Description>
+                                                        </owl:withRestrictions>
+                                                    </rdfs:Datatype>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:unionOf>
+                            </owl:Class>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>WEB: http://www.fda.gov/downloads/BiologicsBloodVaccines/Vaccines/ApprovedProducts/UCM336020.pdf</obo:IAO_0000119>
-        <obo:IAO_0000115>A Flublok vaccine adverse event that is associated with an administration of Flublok and displays an headache AE</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He, Erica Marcos</obo:IAO_0000117>
+        <obo:IAO_0000115>A Flublok vaccine adverse event that is associated with an administration of Flublok and displays a headache AE</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -4236,43 +4433,114 @@
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="&obo;VO_0000545"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;OVAE_0000057"/>
-                                <owl:someValuesFrom>
-                                    <rdfs:Datatype>
-                                        <owl:onDatatype rdf:resource="&xsd;decimal"/>
-                                        <owl:withRestrictions rdf:parseType="Collection">
-                                            <rdf:Description>
-                                                <xsd:minInclusive rdf:datatype="&xsd;decimal">0.15</xsd:minInclusive>
-                                            </rdf:Description>
-                                        </owl:withRestrictions>
-                                    </rdfs:Datatype>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;OVAE_0000059"/>
-                                <owl:someValuesFrom>
-                                    <rdfs:Datatype>
-                                        <owl:onDatatype rdf:resource="&xsd;integer"/>
-                                        <owl:withRestrictions rdf:parseType="Collection">
-                                            <rdf:Description>
-                                                <xsd:maxInclusive rdf:datatype="&xsd;integer">49</xsd:maxInclusive>
-                                            </rdf:Description>
-                                            <rdf:Description>
-                                                <xsd:minInclusive rdf:datatype="&xsd;integer">8</xsd:minInclusive>
-                                            </rdf:Description>
-                                        </owl:withRestrictions>
-                                    </rdfs:Datatype>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
+                            <owl:Class>
+                                <owl:unionOf rdf:parseType="Collection">
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;OVAE_0000057"/>
+                                                <owl:someValuesFrom>
+                                                    <rdfs:Datatype>
+                                                        <owl:onDatatype rdf:resource="&xsd;decimal"/>
+                                                        <owl:withRestrictions rdf:parseType="Collection">
+                                                            <rdf:Description>
+                                                                <xsd:minInclusive rdf:datatype="&xsd;decimal">0.13</xsd:minInclusive>
+                                                            </rdf:Description>
+                                                        </owl:withRestrictions>
+                                                    </rdfs:Datatype>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;OVAE_0000059"/>
+                                                <owl:someValuesFrom>
+                                                    <rdfs:Datatype>
+                                                        <owl:onDatatype rdf:resource="&xsd;integer"/>
+                                                        <owl:withRestrictions rdf:parseType="Collection">
+                                                            <rdf:Description>
+                                                                <xsd:minInclusive rdf:datatype="&xsd;integer">50</xsd:minInclusive>
+                                                            </rdf:Description>
+                                                            <rdf:Description>
+                                                                <xsd:maxInclusive rdf:datatype="&xsd;integer">64</xsd:maxInclusive>
+                                                            </rdf:Description>
+                                                        </owl:withRestrictions>
+                                                    </rdfs:Datatype>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;OVAE_0000057"/>
+                                                <owl:someValuesFrom>
+                                                    <rdfs:Datatype>
+                                                        <owl:onDatatype rdf:resource="&xsd;decimal"/>
+                                                        <owl:withRestrictions rdf:parseType="Collection">
+                                                            <rdf:Description>
+                                                                <xsd:minInclusive rdf:datatype="&xsd;decimal">0.13</xsd:minInclusive>
+                                                            </rdf:Description>
+                                                        </owl:withRestrictions>
+                                                    </rdfs:Datatype>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;OVAE_0000059"/>
+                                                <owl:someValuesFrom>
+                                                    <rdfs:Datatype>
+                                                        <owl:onDatatype rdf:resource="&xsd;integer"/>
+                                                        <owl:withRestrictions rdf:parseType="Collection">
+                                                            <rdf:Description>
+                                                                <xsd:minInclusive rdf:datatype="&xsd;integer">65</xsd:minInclusive>
+                                                            </rdf:Description>
+                                                        </owl:withRestrictions>
+                                                    </rdfs:Datatype>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;OVAE_0000057"/>
+                                                <owl:someValuesFrom>
+                                                    <rdfs:Datatype>
+                                                        <owl:onDatatype rdf:resource="&xsd;decimal"/>
+                                                        <owl:withRestrictions rdf:parseType="Collection">
+                                                            <rdf:Description>
+                                                                <xsd:minInclusive rdf:datatype="&xsd;decimal">0.15</xsd:minInclusive>
+                                                            </rdf:Description>
+                                                        </owl:withRestrictions>
+                                                    </rdfs:Datatype>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;OVAE_0000059"/>
+                                                <owl:someValuesFrom>
+                                                    <rdfs:Datatype>
+                                                        <owl:onDatatype rdf:resource="&xsd;integer"/>
+                                                        <owl:withRestrictions rdf:parseType="Collection">
+                                                            <rdf:Description>
+                                                                <xsd:maxInclusive rdf:datatype="&xsd;integer">49</xsd:maxInclusive>
+                                                            </rdf:Description>
+                                                            <rdf:Description>
+                                                                <xsd:minInclusive rdf:datatype="&xsd;integer">18</xsd:minInclusive>
+                                                            </rdf:Description>
+                                                        </owl:withRestrictions>
+                                                    </rdfs:Datatype>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:unionOf>
+                            </owl:Class>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A Flublok vaccine adverse event that is associated with an administration of Flublok and displays an fatigue AE</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://www.fda.gov/downloads/BiologicsBloodVaccines/Vaccines/ApprovedProducts/UCM336020.pdf</obo:IAO_0000119>
-        <obo:IAO_0000117>Yongqun He, Erica Marcos</obo:IAO_0000117>
+        <obo:IAO_0000117>Yongqun He, Erica Marcos, Jiangan Xie</obo:IAO_0000117>
+        <obo:IAO_0000115>A Flublok vaccine adverse event that is associated with an administration of Flublok and displays a fatigue AE</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -4290,43 +4558,47 @@
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
                             <rdf:Description rdf:about="&obo;VO_0000545"/>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;OVAE_0000057"/>
-                                <owl:someValuesFrom>
-                                    <rdfs:Datatype>
-                                        <owl:onDatatype rdf:resource="&xsd;decimal"/>
-                                        <owl:withRestrictions rdf:parseType="Collection">
-                                            <rdf:Description>
-                                                <xsd:minInclusive rdf:datatype="&xsd;decimal">0.11</xsd:minInclusive>
-                                            </rdf:Description>
-                                        </owl:withRestrictions>
-                                    </rdfs:Datatype>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
-                            <owl:Restriction>
-                                <owl:onProperty rdf:resource="&obo;OVAE_0000059"/>
-                                <owl:someValuesFrom>
-                                    <rdfs:Datatype>
-                                        <owl:onDatatype rdf:resource="&xsd;integer"/>
-                                        <owl:withRestrictions rdf:parseType="Collection">
-                                            <rdf:Description>
-                                                <xsd:maxInclusive rdf:datatype="&xsd;integer">49</xsd:maxInclusive>
-                                            </rdf:Description>
-                                            <rdf:Description>
-                                                <xsd:minInclusive rdf:datatype="&xsd;integer">8</xsd:minInclusive>
-                                            </rdf:Description>
-                                        </owl:withRestrictions>
-                                    </rdfs:Datatype>
-                                </owl:someValuesFrom>
-                            </owl:Restriction>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;OVAE_0000057"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="&xsd;decimal"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:minInclusive rdf:datatype="&xsd;decimal">0.11</xsd:minInclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;OVAE_0000059"/>
+                                        <owl:someValuesFrom>
+                                            <rdfs:Datatype>
+                                                <owl:onDatatype rdf:resource="&xsd;integer"/>
+                                                <owl:withRestrictions rdf:parseType="Collection">
+                                                    <rdf:Description>
+                                                        <xsd:maxInclusive rdf:datatype="&xsd;integer">49</xsd:maxInclusive>
+                                                    </rdf:Description>
+                                                    <rdf:Description>
+                                                        <xsd:minInclusive rdf:datatype="&xsd;integer">18</xsd:minInclusive>
+                                                    </rdf:Description>
+                                                </owl:withRestrictions>
+                                            </rdfs:Datatype>
+                                        </owl:someValuesFrom>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000115>A Flublok vaccine adverse event that is associated with an administration of Flublok and displays a myalgia AE</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He, Erica Marcos</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.fda.gov/downloads/BiologicsBloodVaccines/Vaccines/ApprovedProducts/UCM336020.pdf</obo:IAO_0000119>
-        <obo:IAO_0000115>A Flublok vaccine adverse event that is associated with an administration of Flublok and displays an myalgia AE</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -29848,14 +30120,14 @@
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
+    <rdf:Description rdf:about="&obo;BFO_0000123">
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
+    </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000002">
         <obo:IAO_0000412 rdf:resource="&obo;BFO"/>
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000123">
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000003">
@@ -29891,11 +30163,11 @@
         <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;VO_0012185">
-        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&dc;source">
         <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;VO_0012185">
+        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;bearer_of">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
@@ -29918,11 +30190,11 @@
     <rdf:Description rdf:about="&obo;OAE_0000435">
         <obo:IAO_0000412 rdf:resource="&obo;oae.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;OAE_0000557">
-        <obo:IAO_0000412 rdf:resource="&obo;oae.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;VO_0003355">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;OAE_0000557">
+        <obo:IAO_0000412 rdf:resource="&obo;oae.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000006">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
@@ -29986,12 +30258,12 @@
     <rdf:Description rdf:about="&obo;BFO_0000111">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
+    <rdf:Description rdf:about="&obo;OAE_0000427">
+        <obo:IAO_0000412 rdf:resource="&obo;oae.owl"/>
+    </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_33154">
         <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;OAE_0000427">
-        <obo:IAO_0000412 rdf:resource="&obo;oae.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;OAE_0000543">
         <obo:IAO_0000412 rdf:resource="&obo;oae.owl"/>
@@ -30021,11 +30293,11 @@
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;VO_0000093">
-        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000119">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;VO_0000093">
+        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;CHEBI_23367">
         <obo:IAO_0000412 rdf:resource="&obo;chebi.owl"/>
@@ -30167,11 +30439,11 @@
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000184">
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;VO_0000938">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;BFO_0000184">
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_12092">
         <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_species"/>
@@ -30236,12 +30508,12 @@
     <rdf:Description rdf:about="&obo;BFO_0000172">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
+    <rdf:Description rdf:about="&obo;BFO_0000173">
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+    </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000052">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000173">
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000178">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
@@ -30251,21 +30523,21 @@
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
+    <rdf:Description rdf:about="&obo;BFO_0000176">
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
+    </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000055">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000176">
+    <rdf:Description rdf:about="&obo;BFO_0000177">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000056">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000177">
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000170">
@@ -30317,13 +30589,13 @@
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
+    <rdf:Description rdf:about="&obo;BFO_0000083">
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
+    </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_314293">
         <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_infraorder"/>
         <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000083">
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000080">
@@ -30373,10 +30645,10 @@
     <rdf:Description rdf:about="&obo;BFO_0000140">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000024">
+    <rdf:Description rdf:about="&obo;BFO_0000145">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000145">
+    <rdf:Description rdf:about="&obo;BFO_0000024">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000146">
@@ -30386,13 +30658,13 @@
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
         <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000144">
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000023">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;BFO_0000144">
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;VO_0000856">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
@@ -30433,19 +30705,19 @@
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
+    <rdf:Description rdf:about="&obo;BFO_0000029">
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
+    </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_487">
         <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_species"/>
         <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000029">
+    <rdf:Description rdf:about="&obo;BFO_0000147">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000026">
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000147">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000148">
@@ -30471,12 +30743,12 @@
     <rdf:Description rdf:about="&obo;BFO_0000133">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
+    <rdf:Description rdf:about="&obo;VO_0000625">
+        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
+    </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_11071">
         <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_subgenus"/>
         <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;VO_0000625">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_11072">
@@ -30490,12 +30762,12 @@
     <rdf:Description rdf:about="&obo;VO_0000748">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;NCBITaxon_35278">
-        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;CHEBI_52071">
         <obo:IAO_0000412 rdf:resource="&obo;chebi.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;NCBITaxon_35278">
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;VO_0000630">
@@ -30516,21 +30788,21 @@
     <rdf:Description rdf:about="&obo;BFO_0000018">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000136">
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000015">
         <obo:IAO_0000412 rdf:resource="&obo;BFO"/>
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000016">
+    <rdf:Description rdf:about="&obo;BFO_0000136">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000137">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;BFO_0000016">
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000019">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
@@ -30625,17 +30897,17 @@
     <rdf:Description rdf:about="&obo;BFO_0000030">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000035">
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+    <rdf:Description rdf:about="&obo;NCBITaxon_314146">
+        <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_superorder"/>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000156">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;NCBITaxon_314146">
-        <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_superorder"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    <rdf:Description rdf:about="&obo;BFO_0000035">
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000157">
@@ -30650,11 +30922,11 @@
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000155">
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+    <rdf:Description rdf:about="&obo;inheres_in_part_of">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;inheres_in_part_of">
+    <rdf:Description rdf:about="&obo;BFO_0000155">
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_11051">
@@ -30662,13 +30934,13 @@
         <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;NCBITaxon_11050">
-        <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_family"/>
+    <rdf:Description rdf:about="&obo;NCBITaxon_11292">
+        <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_species"/>
         <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;NCBITaxon_11292">
-        <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_species"/>
+    <rdf:Description rdf:about="&obo;NCBITaxon_11050">
+        <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_family"/>
         <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
@@ -30701,12 +30973,12 @@
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
+    <rdf:Description rdf:about="&obo;BFO_0000038">
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+    </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000159">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000038">
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_689832">
         <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_subfamily"/>
@@ -30728,10 +31000,10 @@
     <rdf:Description rdf:about="&obo;VO_0000544">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;VO_0000420">
+    <rdf:Description rdf:about="&obo;VO_0000662">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;VO_0000662">
+    <rdf:Description rdf:about="&obo;VO_0000420">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;OAE_0000097">
@@ -30740,11 +31012,11 @@
     <rdf:Description rdf:about="&obo;VO_0000669">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;VO_0000547">
-        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_32524">
         <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;VO_0000547">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;VO_0000667">
@@ -30772,14 +31044,14 @@
     <rdf:Description rdf:about="&obo;VO_0000433">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;OBI_0600007">
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_10508">
         <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_family"/>
         <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;OBI_0600007">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_102793">
@@ -30891,16 +31163,16 @@
         <oboInOwl:inSubset rdf:resource="&obo;uberon#uberon_slim"/>
         <oboInOwl:inSubset rdf:resource="&obo;uberon#vertebrate_core"/>
     </rdf:Description>
+    <rdf:Description rdf:about="&obo;NCBITaxon_197912">
+        <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_genus"/>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
+    </rdf:Description>
     <rdf:Description rdf:about="&obo;UBERON_0001134">
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
         <oboInOwl:inSubset rdf:resource="&obo;uberon#uberon_slim"/>
         <oboInOwl:inSubset rdf:resource="&obo;uberon#vertebrate_core"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;NCBITaxon_197912">
-        <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_genus"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;VO_0000590">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
@@ -30956,12 +31228,12 @@
     <rdf:Description rdf:about="&obo;VO_0001357">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;VO_0001479">
-        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_724">
         <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_genus"/>
         <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;VO_0001479">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;VO_0000147">
@@ -30984,10 +31256,10 @@
     <rdf:Description rdf:about="&obo;VO_0000037">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;VO_0001243">
+    <rdf:Description rdf:about="&obo;VO_0000278">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;VO_0000278">
+    <rdf:Description rdf:about="&obo;VO_0001243">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_1301">
@@ -31000,12 +31272,12 @@
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
+    <rdf:Description rdf:about="&obo;VO_0000270">
+        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
+    </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_2759">
         <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_superkingdom"/>
         <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;VO_0000270">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_85007">
