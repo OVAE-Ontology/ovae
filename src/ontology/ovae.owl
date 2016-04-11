@@ -35,7 +35,7 @@
         <dc:description xml:lang="en">OVAE is a biomedical ontology in the area of vaccine adverse events. OVAE is an extension of the community-based Ontology of Adverse Events (OAE). </dc:description>
         <dc:title xml:lang="en">OVAE: Ontology of Vaccine Adverse Events</dc:title>
         <dc:format xml:lang="en">OWL-DL</dc:format>
-        <owl:versionInfo xml:lang="en">Vision Release: 1.0.33</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Vision Release: 1.0.34</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He (YH)</dc:creator>
         <owl:imports rdf:resource="&obo;ovae/OAE_import.owl"/>
         <owl:imports rdf:resource="&obo;ovae/VO_import.owl"/>
@@ -30120,14 +30120,14 @@
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000123">
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000002">
         <obo:IAO_0000412 rdf:resource="&obo;BFO"/>
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;BFO_0000123">
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000003">
@@ -30163,11 +30163,11 @@
         <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&dc;source">
-        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;VO_0012185">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&dc;source">
+        <rdfs:isDefinedBy rdf:resource="http://purl.org/dc/elements/1.1/"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;bearer_of">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
@@ -30190,11 +30190,11 @@
     <rdf:Description rdf:about="&obo;OAE_0000435">
         <obo:IAO_0000412 rdf:resource="&obo;oae.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;VO_0003355">
-        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;OAE_0000557">
         <obo:IAO_0000412 rdf:resource="&obo;oae.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;VO_0003355">
+        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000006">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
@@ -30258,12 +30258,12 @@
     <rdf:Description rdf:about="&obo;BFO_0000111">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;OAE_0000427">
-        <obo:IAO_0000412 rdf:resource="&obo;oae.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_33154">
         <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;OAE_0000427">
+        <obo:IAO_0000412 rdf:resource="&obo;oae.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;OAE_0000543">
         <obo:IAO_0000412 rdf:resource="&obo;oae.owl"/>
@@ -30293,11 +30293,11 @@
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000119">
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;VO_0000093">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;BFO_0000119">
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;CHEBI_23367">
         <obo:IAO_0000412 rdf:resource="&obo;chebi.owl"/>
@@ -30439,11 +30439,11 @@
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;VO_0000938">
-        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000184">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;VO_0000938">
+        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_12092">
         <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_species"/>
@@ -30508,12 +30508,12 @@
     <rdf:Description rdf:about="&obo;BFO_0000172">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000173">
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000052">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;BFO_0000173">
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000178">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
@@ -30523,21 +30523,21 @@
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000176">
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000055">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000177">
+    <rdf:Description rdf:about="&obo;BFO_0000176">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000056">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;BFO_0000177">
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000170">
@@ -30589,13 +30589,13 @@
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000083">
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_314293">
         <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_infraorder"/>
         <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;BFO_0000083">
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000080">
@@ -30645,10 +30645,10 @@
     <rdf:Description rdf:about="&obo;BFO_0000140">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000145">
+    <rdf:Description rdf:about="&obo;BFO_0000024">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000024">
+    <rdf:Description rdf:about="&obo;BFO_0000145">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000146">
@@ -30658,13 +30658,13 @@
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
         <obo:IAO_0000412 rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
     </rdf:Description>
+    <rdf:Description rdf:about="&obo;BFO_0000144">
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+    </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000023">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000144">
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;VO_0000856">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
@@ -30705,19 +30705,19 @@
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000029">
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_487">
         <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_species"/>
         <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000147">
+    <rdf:Description rdf:about="&obo;BFO_0000029">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000026">
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;BFO_0000147">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000148">
@@ -30743,12 +30743,12 @@
     <rdf:Description rdf:about="&obo;BFO_0000133">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;VO_0000625">
-        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_11071">
         <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_subgenus"/>
         <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;VO_0000625">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_11072">
@@ -30788,21 +30788,21 @@
     <rdf:Description rdf:about="&obo;BFO_0000018">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
+    <rdf:Description rdf:about="&obo;BFO_0000136">
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+    </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000015">
         <obo:IAO_0000412 rdf:resource="&obo;BFO"/>
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000136">
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000137">
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000016">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;BFO_0000137">
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000019">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
@@ -30814,14 +30814,14 @@
     <rdf:Description rdf:about="&obo;BFO_0000164">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000161">
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000040">
         <obo:IAO_0000412 rdf:resource="&obo;BFO"/>
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;BFO_0000161">
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000162">
@@ -30897,17 +30897,17 @@
     <rdf:Description rdf:about="&obo;BFO_0000030">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;NCBITaxon_314146">
-        <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_superorder"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    <rdf:Description rdf:about="&obo;BFO_0000035">
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000156">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000035">
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+    <rdf:Description rdf:about="&obo;NCBITaxon_314146">
+        <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_superorder"/>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000157">
@@ -30922,11 +30922,11 @@
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;inheres_in_part_of">
-        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000155">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;inheres_in_part_of">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_11051">
@@ -30934,13 +30934,13 @@
         <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;NCBITaxon_11292">
-        <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_species"/>
+    <rdf:Description rdf:about="&obo;NCBITaxon_11050">
+        <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_family"/>
         <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;NCBITaxon_11050">
-        <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_family"/>
+    <rdf:Description rdf:about="&obo;NCBITaxon_11292">
+        <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_species"/>
         <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
@@ -30973,12 +30973,12 @@
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000038">
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000159">
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;BFO_0000038">
+        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_689832">
         <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_subfamily"/>
@@ -31000,10 +31000,10 @@
     <rdf:Description rdf:about="&obo;VO_0000544">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;VO_0000662">
+    <rdf:Description rdf:about="&obo;VO_0000420">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;VO_0000420">
+    <rdf:Description rdf:about="&obo;VO_0000662">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;OAE_0000097">
@@ -31012,11 +31012,11 @@
     <rdf:Description rdf:about="&obo;VO_0000669">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;NCBITaxon_32524">
-        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    <rdf:Description rdf:about="&obo;VO_0000547">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;VO_0000547">
+    <rdf:Description rdf:about="&obo;NCBITaxon_32524">
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;VO_0000667">
@@ -31044,14 +31044,14 @@
     <rdf:Description rdf:about="&obo;VO_0000433">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;NCBITaxon_10508">
-        <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_family"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;OBI_0600007">
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;NCBITaxon_10508">
+        <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_family"/>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_102793">
@@ -31163,16 +31163,16 @@
         <oboInOwl:inSubset rdf:resource="&obo;uberon#uberon_slim"/>
         <oboInOwl:inSubset rdf:resource="&obo;uberon#vertebrate_core"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;NCBITaxon_197912">
-        <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_genus"/>
-        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;UBERON_0001134">
         <obo:IAO_0000412 rdf:resource="&obo;uberon.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
         <oboInOwl:inSubset rdf:resource="&obo;uberon#uberon_slim"/>
         <oboInOwl:inSubset rdf:resource="&obo;uberon#vertebrate_core"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;NCBITaxon_197912">
+        <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_genus"/>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;VO_0000590">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
@@ -31199,10 +31199,10 @@
     <rdf:Description rdf:about="&obo;VO_0000213">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;VO_0000211">
+    <rdf:Description rdf:about="&obo;VO_0000574">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;VO_0000574">
+    <rdf:Description rdf:about="&obo;VO_0000211">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;UBERON_0002097">
@@ -31228,12 +31228,12 @@
     <rdf:Description rdf:about="&obo;VO_0001357">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
+    <rdf:Description rdf:about="&obo;VO_0001479">
+        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
+    </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_724">
         <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_genus"/>
         <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
-        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;VO_0001479">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;VO_0000147">
@@ -31256,10 +31256,10 @@
     <rdf:Description rdf:about="&obo;VO_0000037">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;VO_0000278">
+    <rdf:Description rdf:about="&obo;VO_0001243">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;VO_0001243">
+    <rdf:Description rdf:about="&obo;VO_0000278">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_1301">
@@ -31272,12 +31272,12 @@
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;VO_0000270">
-        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_2759">
         <ncbitaxon:has_rank rdf:resource="&obo;NCBITaxon_superkingdom"/>
         <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;VO_0000270">
         <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_85007">
