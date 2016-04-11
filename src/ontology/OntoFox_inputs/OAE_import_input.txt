@@ -1,0 +1,108 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/ovae/OAE_import.owl
+
+[Source ontology]
+OAE
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OAE_0000001 #adverse event
+http://purl.obolibrary.org/obo/OAE_0000034
+http://purl.obolibrary.org/obo/OAE_0000077
+http://purl.obolibrary.org/obo/OAE_0000215
+http://purl.obolibrary.org/obo/OAE_0000216
+http://purl.obolibrary.org/obo/OAE_0000217
+http://purl.obolibrary.org/obo/OAE_0000306
+http://purl.obolibrary.org/obo/OAE_0000323
+http://purl.obolibrary.org/obo/OAE_0000324
+http://purl.obolibrary.org/obo/OAE_0000325
+http://purl.obolibrary.org/obo/OAE_0000326
+http://purl.obolibrary.org/obo/OAE_0000327
+http://purl.obolibrary.org/obo/OAE_0000331
+http://purl.obolibrary.org/obo/OAE_0000333
+http://purl.obolibrary.org/obo/OAE_0000334
+http://purl.obolibrary.org/obo/OAE_0000335
+http://purl.obolibrary.org/obo/OAE_0000336
+http://purl.obolibrary.org/obo/OAE_0000340
+http://purl.obolibrary.org/obo/OAE_0000343
+http://purl.obolibrary.org/obo/OAE_0000344
+http://purl.obolibrary.org/obo/OAE_0000350
+http://purl.obolibrary.org/obo/OAE_0000351
+http://purl.obolibrary.org/obo/OAE_0000358
+http://purl.obolibrary.org/obo/OAE_0000361
+http://purl.obolibrary.org/obo/OAE_0000362
+http://purl.obolibrary.org/obo/OAE_0000366
+http://purl.obolibrary.org/obo/OAE_0000368
+http://purl.obolibrary.org/obo/OAE_0000369
+http://purl.obolibrary.org/obo/OAE_0000372
+http://purl.obolibrary.org/obo/OAE_0000373
+http://purl.obolibrary.org/obo/OAE_0000374
+http://purl.obolibrary.org/obo/OAE_0000375
+http://purl.obolibrary.org/obo/OAE_0000376
+http://purl.obolibrary.org/obo/OAE_0000377
+http://purl.obolibrary.org/obo/OAE_0000382
+http://purl.obolibrary.org/obo/OAE_0000383
+http://purl.obolibrary.org/obo/OAE_0000385
+http://purl.obolibrary.org/obo/OAE_0000388
+http://purl.obolibrary.org/obo/OAE_0000390
+http://purl.obolibrary.org/obo/OAE_0000391
+http://purl.obolibrary.org/obo/OAE_0000393
+http://purl.obolibrary.org/obo/OAE_0000394
+http://purl.obolibrary.org/obo/OAE_0000396
+http://purl.obolibrary.org/obo/OAE_0000398
+http://purl.obolibrary.org/obo/OAE_0000400
+http://purl.obolibrary.org/obo/OAE_0000402
+http://purl.obolibrary.org/obo/OAE_0000419
+http://purl.obolibrary.org/obo/OAE_0000455
+http://purl.obolibrary.org/obo/OAE_0000538
+http://purl.obolibrary.org/obo/OAE_0000551
+http://purl.obolibrary.org/obo/OAE_0000556
+http://purl.obolibrary.org/obo/OAE_0000565
+http://purl.obolibrary.org/obo/OAE_0000584
+http://purl.obolibrary.org/obo/OAE_0000600
+http://purl.obolibrary.org/obo/OAE_0000601
+http://purl.obolibrary.org/obo/OAE_0000616
+http://purl.obolibrary.org/obo/OAE_0000630
+http://purl.obolibrary.org/obo/OAE_0000639
+http://purl.obolibrary.org/obo/OAE_0000643
+http://purl.obolibrary.org/obo/OAE_0000644
+http://purl.obolibrary.org/obo/OAE_0000645
+http://purl.obolibrary.org/obo/OAE_0000650
+http://purl.obolibrary.org/obo/OAE_0000770
+http://purl.obolibrary.org/obo/OAE_0001105
+http://purl.obolibrary.org/obo/OAE_0001139
+http://purl.obolibrary.org/obo/OAE_0001546
+http://purl.obolibrary.org/obo/OAE_0001547
+http://purl.obolibrary.org/obo/OAE_0001548
+http://purl.obolibrary.org/obo/OAE_0001549
+http://purl.obolibrary.org/obo/OAE_0001550
+http://purl.obolibrary.org/obo/OGMS_0000060 #bodily process
+
+http://purl.obolibrary.org/obo/OAE_0001552
+http://purl.obolibrary.org/obo/OAE_0001555
+http://purl.obolibrary.org/obo/OAE_0001556
+http://purl.obolibrary.org/obo/OAE_0000399
+
+http://purl.obolibrary.org/obo/OAE_0001553
+http://purl.obolibrary.org/obo/OAE_0001554
+http://purl.obolibrary.org/obo/OAE_0001557
+http://purl.obolibrary.org/obo/OAE_0001558
+http://purl.obolibrary.org/obo/OAE_0001559
+http://purl.obolibrary.org/obo/OAE_0001560
+http://purl.obolibrary.org/obo/OAE_0000055 #contraindication
+http://purl.obolibrary.org/obo/OAE_0000004 #vaccine adverse event
+
+[Top level source term URIs and target direct superclass URIs]
+
+http://purl.obolibrary.org/obo/OGMS_0000060 #bodily process
+subClassOf http://purl.obolibrary.org/obo/BFO_0000015
+
+#http://purl.obolibrary.org/obo/BFO_0000001
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Branch extractions from source term URIs and target direct superclass URIs]
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+

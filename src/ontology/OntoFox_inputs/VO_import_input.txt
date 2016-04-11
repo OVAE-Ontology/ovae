@@ -1,0 +1,93 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/ovae/VO_import.owl
+
+[Source ontology]
+VO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/VO_0000001 #vaccine
+http://purl.obolibrary.org/obo/VO_0000003
+http://purl.obolibrary.org/obo/VO_0000004
+http://purl.obolibrary.org/obo/VO_0000005
+http://purl.obolibrary.org/obo/VO_0000006
+http://purl.obolibrary.org/obo/VO_0000014
+http://purl.obolibrary.org/obo/VO_0000015
+http://purl.obolibrary.org/obo/VO_0000028
+http://purl.obolibrary.org/obo/VO_0000029
+http://purl.obolibrary.org/obo/VO_0000030
+http://purl.obolibrary.org/obo/VO_0000043
+http://purl.obolibrary.org/obo/VO_0000044
+http://purl.obolibrary.org/obo/VO_0000045
+http://purl.obolibrary.org/obo/VO_0000046
+http://purl.obolibrary.org/obo/VO_0000047
+http://purl.obolibrary.org/obo/VO_0000049
+http://purl.obolibrary.org/obo/VO_0000052
+http://purl.obolibrary.org/obo/VO_0000054
+http://purl.obolibrary.org/obo/VO_0000063
+http://purl.obolibrary.org/obo/VO_0000064
+http://purl.obolibrary.org/obo/VO_0000065
+http://purl.obolibrary.org/obo/VO_0000066
+http://purl.obolibrary.org/obo/VO_0000067
+http://purl.obolibrary.org/obo/VO_0000071
+http://purl.obolibrary.org/obo/VO_0000073
+http://purl.obolibrary.org/obo/VO_0000082
+http://purl.obolibrary.org/obo/VO_0000083
+http://purl.obolibrary.org/obo/VO_0000084
+http://purl.obolibrary.org/obo/VO_0000090
+http://purl.obolibrary.org/obo/VO_0000091
+http://purl.obolibrary.org/obo/VO_0000094
+http://purl.obolibrary.org/obo/VO_0000096
+http://purl.obolibrary.org/obo/VO_0000097
+http://purl.obolibrary.org/obo/VO_0000102
+http://purl.obolibrary.org/obo/VO_0000112
+http://purl.obolibrary.org/obo/VO_0000113
+http://purl.obolibrary.org/obo/VO_0000119
+http://purl.obolibrary.org/obo/VO_0000121
+http://purl.obolibrary.org/obo/VO_0000124
+http://purl.obolibrary.org/obo/VO_0001126
+http://purl.obolibrary.org/obo/VO_0001244
+http://purl.obolibrary.org/obo/VO_0001246
+http://purl.obolibrary.org/obo/VO_0010711
+http://purl.obolibrary.org/obo/VO_0010715
+http://purl.obolibrary.org/obo/VO_0010727
+http://purl.obolibrary.org/obo/VO_0010737
+http://purl.obolibrary.org/obo/VO_0010738
+http://purl.obolibrary.org/obo/VO_0010745
+http://purl.obolibrary.org/obo/VO_0011558
+http://purl.obolibrary.org/obo/VO_0011559
+http://purl.obolibrary.org/obo/VO_0000545 #human vaccinee population
+http://purl.obolibrary.org/obo/VO_0000897 #age at vaccination
+http://purl.obolibrary.org/obo/VO_0000544 #human vaccinee
+http://purl.obolibrary.org/obo/VO_0000002 #vaccination
+
+http://purl.obolibrary.org/obo/VO_0000031
+http://purl.obolibrary.org/obo/VO_0000033
+http://purl.obolibrary.org/obo/VO_0000034
+http://purl.obolibrary.org/obo/VO_0000079
+http://purl.obolibrary.org/obo/VO_0000088
+http://purl.obolibrary.org/obo/VO_0000092
+http://purl.obolibrary.org/obo/VO_0000104
+http://purl.obolibrary.org/obo/VO_0000111
+http://purl.obolibrary.org/obo/VO_0000120
+
+http://purl.obolibrary.org/obo/VO_0000978 #Flublok
+http://purl.obolibrary.org/obo/VO_0000980 #Flucelvax
+http://purl.obolibrary.org/obo/VO_0000982 #FluMist Quadrivalent 
+http://purl.obolibrary.org/obo/VO_0000983 #Fluarix Quadrivalent
+http://purl.obolibrary.org/obo/VO_0000984 #Tetanus Toxoid (for Boost use Only) by Sanofi Pasteur Inc
+
+http://purl.obolibrary.org/obo/VO_0000968 #has age in month
+http://purl.obolibrary.org/obo/VO_0000969 #has age in week
+http://purl.obolibrary.org/obo/VO_0000251 #has age in year
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/BFO_0000001
+
+[Source term retrieval setting]
+includeAllIntermediates
+
+[Branch extractions from source term URIs and target direct superclass URIs]
+
+[Source annotation URIs]
+includeAllAxiomsRecursively
+

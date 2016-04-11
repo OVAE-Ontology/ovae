@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ovae.owl" uri="ovae.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ovae/VO_import.owl" uri="VO_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ovae/OAE_import.owl" uri="OAE_import.owl"/>
+</catalog>
